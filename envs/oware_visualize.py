@@ -10,7 +10,7 @@ from envs.oware import Oware
 
 class OwareVisualize:
     ROOT = tk.Tk()
-    ROOT.title("Oware (CS-E4800 Tournament)")
+    ROOT.title("Oware AI")
     ROOT.iconphoto(True, tk.PhotoImage(file="images/AI.png"))
     IS_CLOSED = False
 
