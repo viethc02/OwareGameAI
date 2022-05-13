@@ -14,12 +14,6 @@ class OwareVisualize:
     ROOT.iconphoto(True, tk.PhotoImage(file="images/AI.png"))
     IS_CLOSED = False
 
-    # @staticmethod
-    # def on_quit():
-    #     OwareVisualize.IS_CLOSED = True
-    #     OwareVisualize.ROOT.destroy()
-    # ROOT.protocol("WM_DELETE_WINDOW", on_quit)
-
     STONES = [f"images/stone{i}.png" for i in range(10)]
     stones = []
     BOARD = "images/board.png"
