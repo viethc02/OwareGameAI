@@ -30,13 +30,13 @@ def main():
     canvas.pack(fill="both", expand=True)
     canvas.create_image(0, 0, image=img, anchor="nw")
 
-    text = Text(root, wrap=WORD, height= 13, width=63, font="ARIAL")
+    text = Text(root, wrap=WORD, height= 13, width=63, font="ARIAL", bg="#009F75", fg="white")
     text.place(x=40, y=70)
     text.insert(INSERT, "RULES:")
     text.insert(INSERT, "\n\tCapturing occurs only when a player brings the count of an opponent's house to exactly two or three with the final seed he sowed in that turn. ")
     text.insert(INSERT, "If the previous-to-last seed also brought an opponent's house to two or three, these are captured as well, and so on until a house is reached which does not contain two or three seeds or does not belong to the opponent. ")
     text.insert(INSERT, "However, if a move would capture all of an opponent's seeds, the capture is forfeited since this would prevent the opponent from continuing the game, and the seeds are instead left on the board.")
-    text.insert(INSERT, "\n\tThe game is over when one player has captured 25 or more seeds, or each player has seeds in his holes and then each player captures the seeds on their side of the board")
+    text.insert(INSERT, "\n\tThe game is over when one player has captured 25 or more seeds, or each player has taken 24 seeds (draw). If the game has been reduced to an endless cycle, the game ends when each player has seeds in his holes and then each player captures the seeds on their side of the board.")
 
     def human():
         players = [Human, IDMinimaxAgent]
